@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clickable Images</title>
+    <style>
+
+    .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+
+    .image-container img {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+
+
+    <div class="image-container">
+
+        <img src="img1.avif" alt="Image 1" onclick="redirectToPage('alt text and image.html')">
+        
+        <img src="img2.avif" alt="Image 2" onclick="redirectToPage('case.html')">
+        
+        <img src="img3.avif" alt="Image 3" onclick="redirectToPage('build form.html')">
+
+    </div>
+    <script>
+
+        function redirectToPage(url) {
+            window.location.href =url;
+        }
+    </script>
+
+</body>
+
+</html>

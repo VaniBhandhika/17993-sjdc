@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="submit_form.php" method="post">
+        <label for="checkbox1">
+            <input type="checkbox" id="checkbox1" name="preferences[]" value="option 1">
+            Option 1
+        </label>
+        <label for="checkbox2">
+            <input type="checkbox" id="checkbox2" name="preferences[]" value="option 2">
+            Option 2
+        </label>
+        <label for="checkbox3">
+            <input type="checkbox" id="checkbox3" name="preferences[]" value="option 3">
+            Option 3
+        </label>
+        <label for="dropdown">
+            Select an option from the dropdown menu: 
+            <select name="dropdown" id="dropdown">
+                <option value="Option A">Option A</option>
+                <option value="Option B">Option B</option>
+                <option value="Option C"> Option C</option>
+            </select>
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
