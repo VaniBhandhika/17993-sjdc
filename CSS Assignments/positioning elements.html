@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Elements</title>
+</head>
+<style>
+    .relative{
+        position: relative;
+        left: 20px;
+        top: 0;
+        height: 200px;
+        width: 100px;
+        padding: 4px;
+        border: 3px solid red;
+    }
+    h3{
+        top: 120px;
+    }
+    .absolute{
+        position: absolute;
+        right: 20px;
+        bottom: 100px;
+        width: 200px;
+        height: 200px;
+        padding: 4px;
+        border: 4px solid green;
+    }
+    h3{bottom: 120px;}
+    .fixed{
+        position: fixed;
+        right: 60px;
+        border: 3px solid blue;
+        top: 100px;
+        width: 200px;
+        height: 200px;
+        padding: 4px;
+    }
+    h3{
+        right: 60px;
+        top: 100px;
+    }
+    .sticky{
+        position: sticky;
+        padding: 4px;
+        border: 2px solid salmon;
+        left: 20px;
+        bottom: 120px;
+        width: 200px;
+        height: 200px;
+    }
+    h3{left: 60px;
+    bottom: 100px;}
+</style>
+<body>
+    <h2>Postioning Elements</h2>
+    <p>positioning element in different types, know we are going to discuss adout 4 tyoes</p>
+    <div class="relative">
+        <h3>I am relative</h3>
+        An element eith position: relative; is positioned relativeto its normal position
+    </div>
+    <div class="absolute">
+        <h3>I am relative</h3>
+        An element eith position: relative; is positioned relativeto its normal position
+    </div>
+    <div class="sticky">
+        <h3>I am relative</h3>
+        An element eith position: relative; is positioned relativeto its normal position
+    </div>
+</body>
+</html>
